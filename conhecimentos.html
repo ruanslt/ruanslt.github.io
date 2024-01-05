@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfólio | Sobre mim</title>
+
+      <!-- JavaScript e jQuery -->
+      <script src="https://kit.fontawesome.com/fcfdeaea05.js" crossorigin="anonymous"></script>
+      <script src="assets/js/script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+      <!-- CSS -->
+      <link rel="stylesheet" href="assets/css/reset.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/conhecimentos.css">
+  
+      <!-- Fontes -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Nunito:wght@800&family=Orienta&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Gurajada&family=Nunito:wght@800&family=Orienta&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Familjen+Grotesk&family=Gurajada&family=Nunito:wght@800&family=Orienta&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Familjen+Grotesk&family=Fjalla+One&family=Gurajada&family=Nunito:wght@800&family=Orienta&display=swap" rel="stylesheet"> 
+   
+</head>
+
+<body>
+
+    <img class="fundo" src="assets/img/image_3.png" alt="imagem de fundo">
+
+    <img class="fundo1" src="assets/img/passagem-estados-unidos-capa.jpg" alt="">
+    <img class="fundo2" src="assets/img/image 5 (1).png" alt="">
+
+    <script>
+        // Define o zoom padrão para 67%
+        document.body.style.zoom = "67%";
+    </script>
+
+    <header>
+
+        <div id="cabecalho">
+
+            <div id="retangulo"> </div>
+
+            <div id="ruan">
+                <a id="ruan" href="index.html">RUAN</a>
+            </div>
+            <ul>
+                <li id="sobre-mim">
+                    <a class="h" href="index.html"> Sobre mim </a>
+                </li>
+
+                <li id="conhecimentos">
+                    <a class="h" href="conhecimentos.html">Conhecimentos</a>
+                </li>
+
+                <li id="fale-comigo">
+                    <a class="h" href="contato.html">Fale Comigo</a>
+                </li>
+            </ul>
+
+            <div id="search" id="abrir caixa" onclick="toggleCaixaTexto()">
+                <img src="assets/img/vector.png" id="vector" />
+                <img src="assets/img/vector_ek1.png" id="vector_ek1" />
+            </div>
+
+            <div id="caixaTexto" class="escondido">
+                <input type="text">
+            </div>
+
+
+            <img src="assets/img/rectangle_9.png" nameid="Rectangle 9" id="rectangle_9" />
+
+        </div>
+
+       
+
+    </header>
+
+
+    <main>
+
+        <div class="container">
+
+            <h1>Conhecimentos</h1>
+
+            <div class="filme">
+
+                <ul>
+                    <li style="margin-left: 500px;">
+                        <img class="ingles" src="assets/img/filme (5).png" alt="">
+                    </li>
+                    <li>
+                        <img class="web" src="assets/img/filme (6).png" alt="">
+
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="caixa1">
+            <div class="titulo-caixa1">
+                <h1 id="titulo-caixa1">
+                    Inglês<br> Intermediário
+                </h1>
+                <h2 id="subtitulo-caixa1">
+                    Possuo inglês no nível intermediário, onde <br> estudo na escola de idiomas Smart Team. <br>
+                    Tenho maior facilidade em reading, speak.
+                </h2>
+            </div>
+        </div>
+
+        <div class="caixa2">
+            <div class="titulo-caixa2">
+                <h1 id="titulo-caixa2">
+                    Desenvolvimento<br> Web
+                </h1>
+                <h2 id="subtitulo-caixa2">
+                    Em desenvolvimento Web, possuo <br> conhecimentos nas áreas de CSS, HTML e <br> JavaScript, onde
+                    estudo na escola de Cursos <br> Avançados Softgraf.
+                </h2>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $(".ingles").hover(function () {
+                    $(".caixa1").show();
+                    $(".caixa2").hide();
+                    $(".fundo1").show();
+                    $(".fundo").hide();
+                    $(".fundo2").hide();
+                });
+
+                $(".web").hover(function () {
+                    $(".caixa2").show();
+                    $(".caixa1").hide();
+                    $(".fundo2").show();
+                    $(".fundo").hide();
+                    $(".fundo1").hide();
+                });
+            });
+        </script>
+
+    </main>
+</body>
+</html>
